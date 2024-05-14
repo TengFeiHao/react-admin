@@ -10,10 +10,6 @@ export default ({ mode }: ConfigEnv): UserConfig => {
   // 环境变量
   const { VITE_APP_SRC } = loadEnv(mode, CWD)
   return {
-    define: {
-      __VUE_PROD_HYDRATION_MISMATCH_DETAILS__: 'true'
-    },
-    assetsInclude: ['**/*.md'],
     plugins: [
       react(),
       legacy({
