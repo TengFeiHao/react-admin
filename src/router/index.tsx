@@ -3,7 +3,7 @@ import { lazy, Suspense } from 'react'
 
 const LayoutPage = lazy(() => import('@/views/LayoutPage'))
 const ReactApi = lazy(() => import('@/views/reactApi/ReactApi'))
-const UseImmer = lazy(() => import('@/views/reactApi/immer/UseImmer'))
+const UseImmerPage = lazy(() => import('@/views/reactApi/immer/UseImmerPage'))
 
 const RoterConfig = () => {
   return useRoutes([
@@ -17,7 +17,7 @@ const RoterConfig = () => {
           children: [
             {
               path: 'immer',
-              element: <Suspense><UseImmer/></Suspense>
+              element: <Suspense><UseImmerPage/></Suspense>
             }
           ]
         }
