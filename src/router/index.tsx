@@ -1,11 +1,11 @@
-import { useRoutes } from 'react-router-dom'
+import { useRoutes } from 'react-router'
 import { lazy, Suspense } from 'react'
 
 const LayoutPage = lazy(() => import('@/views/LayoutPage'))
 const ReactApi = lazy(() => import('@/views/reactApi/ReactApi'))
 const UseImmer = lazy(() => import('@/views/reactApi/immer/UseImmer'))
 
-const GetRouters = () => {
+const RoterConfig = () => {
   return useRoutes([
     {
       path: '/',
@@ -25,4 +25,4 @@ const GetRouters = () => {
     }
   ])
 }
-export default GetRouters
+export default RoterConfig

@@ -1,5 +1,5 @@
 
-import { Outlet, useNavigate } from "react-router-dom"
+import { Outlet, useNavigate } from "react-router"
 
 export default function LayoutPage() {
   const navigate = useNavigate();
