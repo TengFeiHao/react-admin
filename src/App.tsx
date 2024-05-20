@@ -1,11 +1,11 @@
-import { Button } from 'antd';
 
-function App() {
+import RoterConfig from '@/router/index'
+import { BrowserRouter } from 'react-router-dom'
+
+export default function App() {
   return (
-    <>
-      <Button type="primary">home</Button>
-    </>
+    <BrowserRouter>
+      <RoterConfig />
+    </BrowserRouter>
   )
 }
-
-export default App
