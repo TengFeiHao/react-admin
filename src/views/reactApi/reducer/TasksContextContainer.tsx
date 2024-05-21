@@ -24,7 +24,7 @@ export const TasksProvider: React.FC<TasksProviderProps> = ({ children }) => {
   );
 };
 
-function tasksReducer(draft: InitialTask[], action: any) {
+const tasksReducer = (draft: InitialTask[], action: any) => {
   switch (action.type) {
     case "added": {
       draft.push(action.task);

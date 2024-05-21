@@ -8,10 +8,14 @@ export default function ReactApi() {
   const onReducer = () => {
     navigation('/reactApi/reducer')
   }
+  const onState = () => {
+    navigation('/reactApi/stateStatus')
+  }
   return (
     <>
       <div onClick={onImmer}>immer</div>
       <div onClick={onReducer}>reducer</div>
+      <div onClick={onState}>state</div>
       <Outlet />
     </>
   );
