@@ -13,9 +13,9 @@ export default function ReactApi() {
   }
   return (
     <>
-      <div onClick={onImmer}>immer</div>
-      <div onClick={onReducer}>reducer</div>
-      <div onClick={onState}>state</div>
+      <div onClick={onImmer}>immer 不可变数据</div>
+      <div onClick={onReducer}>reducer useImmerReducer</div>
+      <div onClick={onState}>state响应输入</div>
       <Outlet />
     </>
   );
