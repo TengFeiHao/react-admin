@@ -7,6 +7,8 @@ const UseImmerPage = lazy(() => import('@/views/reactApi/immer/UseImmerPage'))
 const ReducerPage = lazy(() => import('@/views/reactApi/reducer/ReducerPage'))
 const StateStatus = lazy(() => import('@/views/reactApi/state/StateStatus'))
 const StateFlat = lazy(() => import('@/views/reactApi/state/StateFlat'))
+const RefDemo = lazy(() => import('@/views/reactApi/ref/RefDemo'))
+const LoopDemo = lazy(() => import('@/views/reactApi/ref/LoopRef'))
 
 const RoterConfig = () => {
   return useRoutes([
@@ -33,7 +35,15 @@ const RoterConfig = () => {
             {
               path: 'stateFlat',
               element: <Suspense><StateFlat/></Suspense>
-            }
+            },
+            {
+              path: 'refDemo',
+              element: <Suspense><RefDemo/></Suspense>
+            },
+            {
+              path: 'loopRef',
+              element: <Suspense><LoopDemo/></Suspense>
+            },
           ]
         }
       ]
