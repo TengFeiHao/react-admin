@@ -11,6 +11,8 @@ import { useRef, useState, forwardRef, useImperativeHandle, InputHTMLAttributes 
     setTodos([ ...todos, newTodo]);
   });
   listRef.current.lastChild.scrollIntoView();
+ *
+ * Refs 是一种脱围机制。你应该只在你必须“跳出 React”时使用它们。这方面的常见示例包括管理焦点、滚动位置或调用 React 未暴露的浏览器 API。
  */
 
 interface MyInputHandle {
